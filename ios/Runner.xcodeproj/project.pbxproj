@@ -24,6 +24,8 @@
 		EFA5E29D25764E700011E9FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA5E29C25764E700011E9FC /* Assets.xcassets */; };
 		EFA5E2A025764E700011E9FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA5E29F25764E700011E9FC /* Preview Assets.xcassets */; };
 		EFA5E2A525764E700011E9FC /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EFA5E28425764E6D0011E9FC /* Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EFFD21B22577C196001DC896 /* Info-Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFFD21B12577C196001DC896 /* Info-Test.plist */; };
+		EFFD21BA2577C59D001DC896 /* Info-Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFFD21B92577C59D001DC896 /* Info-Test.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		EFA5E2A125764E700011E9FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA5E2A225764E700011E9FC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		EFD78BFE25763FB400715177 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Test.xcconfig; path = Flutter/Test.xcconfig; sourceTree = "<group>"; };
+		EFFD21B12577C196001DC896 /* Info-Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Test.plist"; sourceTree = "<group>"; };
+		EFFD21B92577C59D001DC896 /* Info-Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Test.plist"; sourceTree = "<group>"; };
 		F32CA6091F247DB72D09CB10 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		F9550889BAB0C82C3E1C566F /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +219,7 @@
 		EFA5E28525764E6D0011E9FC /* Watch */ = {
 			isa = PBXGroup;
 			children = (
+				EFFD21B12577C196001DC896 /* Info-Test.plist */,
 				EFA5E28625764E6E0011E9FC /* Assets.xcassets */,
 				EFA5E28825764E6E0011E9FC /* Info.plist */,
 			);
@@ -224,6 +229,7 @@
 		EFA5E29125764E6F0011E9FC /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EFFD21B92577C59D001DC896 /* Info-Test.plist */,
 				EFA5E29225764E6F0011E9FC /* RunnerApp.swift */,
 				EFA5E29425764E6F0011E9FC /* ContentView.swift */,
 				EFA5E29625764E6F0011E9FC /* NotificationController.swift */,
@@ -365,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFD21B22577C196001DC896 /* Info-Test.plist in Resources */,
 				EFA5E28725764E6E0011E9FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA5E2A025764E700011E9FC /* Preview Assets.xcassets in Resources */,
+				EFFD21BA2577C59D001DC896 /* Info-Test.plist in Resources */,
 				EFA5E29D25764E700011E9FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,10 +805,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = Watch_Extension;
-				INFOPLIST_FILE = Watch/Info.plist;
+				INFOPLIST_FILE = "Watch/Info-Test.plist";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -854,9 +862,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = Watch_Extension;
-				INFOPLIST_FILE = Watch/Info.plist;
+				INFOPLIST_FILE = "Watch/Info-Test.plist";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -908,9 +916,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = Watch_Extension;
-				INFOPLIST_FILE = Watch/Info.plist;
+				INFOPLIST_FILE = "Watch/Info-Test.plist";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -968,7 +976,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Watch Extension/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "Watch Extension/Info-Test.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -976,7 +984,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1033,14 +1041,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Watch Extension/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "Watch Extension/Info-Test.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1095,14 +1103,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Watch Extension/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "Watch Extension/Info-Test.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavorAppleWatch.test.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
